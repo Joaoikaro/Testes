@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+* {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+     font-family: 'poppins', sans-serif;
+}
+
+.header {
+     position: fixed;
+     top: 0px;
+     left: 0px;
+     width: 100%;
+     padding: 20px 100px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     z-index: 99;
+}
+
+.header .logo {
+     font-size: 1.7em;
+     color: white;
+     text-decoration: none;
+}
+
+.nav a {
+     position: relative;
+     font-size: 1.1em;
+     color: white;
+     text-decoration: none;
+     margin-left: 40px;
+}
+
+.nav a::after {
+     content: '';
+     position: absolute;
+     left: 0px;
+     bottom: -6px;
+     width: 100%;
+     height: 3px;
+     background: white;
+     border-radius: 5px;
+     transform: scaleX(0);
+     transition: 0.3s;
+}
+
+.nav a:hover::after {
+     transform: scaleX(1);
+
+}
+
+.home {
+     position: relative;
+     width: 100%;
+     height: 100vh;
+     background: url('café.jpg');
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     align-items: center;
+     padding: 80px 100px 0px;
+}
+
+.home .content {
+     max-width: 600px;
+     color: white;
+     display: block;
+}
+
+.content h2 {
+     font-size: 3em;
+     color: rgb(252, 252, 234);
+     letter-spacing: .03em;
+}
+
+.content p {
+     margin: 10px 0px 40px;
+     font-size: 1.4em;
+     color: #fafaf1;
+     border-radius: 10px;
+     padding: 7px;
+     text-align: justify;
+}
+
+#btn1 {
+     color: white;
+     text-decoration: none;
+     border: 2px solid white;
+     background-color: #1e0b0473;
+     font-size: 2em;
+     font-weight: 500;
+     padding: 10px 40px;
+     border-radius: 40px;
+     transition: 0.3s;
+}
+
+#btn1:hover {
+     background-color: #1e0b04;
+     color: bisque;
+     border: 2px solid orange;
+     box-shadow: 2px 2px 30px rgba(255, 166, 0, 0.856);
+     text-decoration: none;
+     cursor: pointer;
+} 
+
+#login {
+     color: white;
+     text-align: center;
+     width: 550px;
+     box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.411);
+     border-radius: 50px;
+     height: 400px;
+     padding: 30px;
+     position: relative;
+     background-color: transparent;
+     backdrop-filter: blur(10px);
+     left: 400px;
+}
+
+#login > form#dados1 > h2 {
+     font-style: italic;
+     color: rgb(252, 230, 203);
+     font-size: 2.5em;
+     padding-bottom: 30px;
+}
+
+#login > form#dados1 > p {
+     font-style: italic;
+     color: #fafaf1;
+     padding-bottom: 10px;
+}
+
+#login > form#dados1 > div.emailsenha {
+     color: #fafaf1;
+     font-size: 3em;
+}
+
+input#email {
+     border: none;
+     background-color: transparent;
+     color: antiquewhite;
+     border-bottom: 2px solid;
+     width: 27em;
+     height: 3.5em;
+}
+
+input#email::placeholder {
+     font-size: 1.5em;
+     color: rgba(250, 235, 215, 0.404);
+}
+
+input#email:hover::placeholder {
+     color: bisque;
+     transition: 0.5s;
+}
+
+
+input#senha {
+     border: none;
+     color: antiquewhite;
+     border-bottom: 2px solid;
+     background-color: transparent;
+     width: 27em;
+     height: 3.5em;
+}
+
+input#senha::placeholder {
+     font-size: 1.5em;
+     color: rgba(250, 235, 215, 0.404);
+}
+
+input#senha:hover::placeholder {
+     color: bisque;
+     transition: 0.5s;
+}
+
+button#btnentrar {
+     position: relative;
+     left: 19px;
+     width: 367px;
+     height: 3.5em;
+     top: 4px;
+     border-radius: 25px;
+     color: antiquewhite;
+     background-color: #1e0b049f;
+     border: none;
+     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.39);
+     cursor: pointer;
+}
+
+button#btnentrar > p {
+     font-size: 20px;
+} 
+
+
+button#btnentrar:hover {
+     color: white;
+     background-color: rgba(36, 9, 9, 0.856);
+     transition: 0.5s;
+}
+
+#login > .adicionais > p {
+     position: relative;
+     right: 12px;
+}
+
+#login > .adicionais > p, a {
+     color: antiquewhite;
+     position: relative;
+     font-weight: bold;
+     text-decoration: none;
+     padding-top: 20px;
+}
+
+#login > .adicionais > p > a {
+     position: relative;
+     left: 63px;
+}
+
+#login > .adicionais > p > a:hover {
+     position: relative;
+     color: orange;
+     text-decoration: underline;
+     transition: 0.3s;
+     font-style: italic;
+}

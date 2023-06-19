@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Registre-se gratuitamente</title>
+     <link rel="stylesheet" href="registro.css">
+     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+
+<body>
+
+     <header class="header">
+          <a href="#" class="logo">
+               <ion-icon name="cafe"></ion-icon>Coffee
+          </a>
+          <nav class="nav">
+               <a href="#">Home</a>
+
+               <a href="#">Sobre</a>
+
+               <a href="#">Menu</a>
+
+               <a href="#">Avaliações</a>
+
+               <a href="#">Contato</a>
+          </nav>
+     </header>
+     
+    <div id="conteudo">
+          <section class="home">
+               <div id="login">
+                    <form id="dados1">
+                         <h2>Registro</h2>
+                        <div class="emailsenha">
+                             <p><span class="material-symbols-outlined">
+                              person
+                              </span> <input type="text" name="nome" id="nome" placeholder="Usúario" required></p>
+
+                             <p><span class="material-symbols-outlined">mail</span> <input type="email" name="email" id="email" required placeholder="Email" autocomplete="off"></p>
+
+                             <p><span class="material-symbols-outlined">key</span> <input type="password" autocomplete="off" name="senha" id="senha" required placeholder="Senha"></p>
+
+                             <p id="caixinha"><input type="checkbox" name="contrato" id="contrato" required>Li e aceito os <a href="#">termos e condições</a></p>
+                        </div>
+                        <br>
+
+                        <button id="btnentrar"><p>Registrar</p></button>
+                    </form>
+                    <div class="adicionais">
+                         <p>Já possui uma conta? <a href="login.html">Entrar</a></p>
+                    </div>
+               </div>     
+          </section>
+     </div> 
+
+     <script src="registro.js"></script>
+     
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>
