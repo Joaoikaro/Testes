@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Contato</title>
+     <link rel="stylesheet" href="style.css" media="all">
+     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body>
+     <header>
+          <h1>Contato</h1>
+     </header>
+
+     <div>
+          <form>
+               <p><div class="material-symbols-outlined">person</div><input type="text" name="nome" id="nome" placeholder="Nome completo" autocomplete="name" minlength="8" maxlength="26" size="30" required></p>
+
+               <p><div class="material-symbols-outlined">mail</div>
+               <input type="email" name="email" id="email" placeholder="E-mail" autocomplete="email" required></p>
+
+               <p><div class="material-symbols-outlined">priority_high</div> <input type="text" name="Assunto" id="assunto" minlength="1" maxlength="60" size="30" placeholder="Assunto" autocomplete="off" required></p>
+
+               <p><div class="material-symbols-outlined">comment</div> <input type="text" name="mensagem" id="mensagem" size="auto" placeholder="Mensagem" oninput="ajustarInput(this)" maxlength="900" autocomplete="off" required></p>
+
+               <p><button id="btnenviar" class="material-symbols-outlined">send</button></p>
+          </form>
+     </div>
+
+     <div id="relatorio">
+
+     </div>
+
+     <footer>
+          <p>Site criado por <strong><a href="#">João Íkaro</a></strong></p>
+     </footer>
+
+     <script src="script.js"></script>
+</body>
+</html>
